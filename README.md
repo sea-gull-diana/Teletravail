@@ -44,3 +44,11 @@ _07/10/2021_
 - Pour garder la trace des ressources consultees: utiliser un gestionnaire bibliographique comme ZOTERO.
 - La bibliographie a deposer sur Moodle avant la fin de la semaine prochaine (**16 octobre**).
 - Notes de bas de page avec des sources? Une page separee pour les sources?
+
+## Sources
+- <https://www.youtube.com/watch?v=Mo7R98Tppfc> (video sur le developpement de teletravail dans les pays differents pendant la pandemie - 6 min)
+- <https://www.bfmtv.com/replay-emissions/culture-geek/teletravail-la-visioconference-du-futur-06-10_VN-202010060163.html> (court video sur les technologies de futur qui pourriaient simplifier le teletravail - 2,5 min)
+- <https://halshs.archives-ouvertes.fr/halshs-03345444> (article sur les enjeux et perspectives du teletravail: etude de la situation actuelle, analyse des avantages et inconvenients pour les salaries et empoyeurs)
+- <https://www.washingtonpost.com/outlook/2021/09/24/working-home-productivity-pandemic-remote/> (article en anglais parlant des desavantages de teletravail en matiere de la productivite, creativite, chance de promotion, etc.
+- <https://www.lesechos.fr/idees-debats/cercle/opinion-teletravail-vers-une-augmentation-des-inegalites-1197094> (article sur teletravail comme source des inegalites car les catégories professionnelles les plus élevées sont plus frequemment concernees par ce phenomene)
+- <https://news.microsoft.com/fr-fr/2021/04/01/un-an-apres-le-travail-sest-transforme-les-drh-aussi/> (etude des opinions des DRH sur teletravail commande par Microsoft France - permet mieux comprendre les avis et les acteurs des debats)
