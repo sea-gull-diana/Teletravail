@@ -63,6 +63,18 @@ span {
   background-color: aliceblue;
 }
 
+.img-box {
+  position: relative;
+  left: 50px;
+}
+
 img {
-  width: 500px;
+  max-width: 50%;
+  margin-bottom: 50px;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 5px;
+  font-style: italic;
 }
