@@ -70,3 +70,6 @@ Pages : presentation.html, index.html, contact.html.
 - <https://www.washingtonpost.com/outlook/2021/09/24/working-home-productivity-pandemic-remote/> (article en anglais parlant des desavantages de teletravail en matiere de la productivite, creativite, chance de promotion, etc.
 - <https://www.lesechos.fr/idees-debats/cercle/opinion-teletravail-vers-une-augmentation-des-inegalites-1197094> (article sur teletravail comme source des inegalites car les catégories professionnelles les plus élevées sont plus frequemment concernees par ce phenomene)
 - <https://news.microsoft.com/fr-fr/2021/04/01/un-an-apres-le-travail-sest-transforme-les-drh-aussi/> (etude des opinions des DRH sur teletravail commande par Microsoft France - permet mieux comprendre les avis et les acteurs des debats)
+
+## Lien vers le texte du site
+- <https://1drv.ms/w/s!Ah20cN1s-zt3lzHBw89nizaiF1xc?e=7qh3pi>
