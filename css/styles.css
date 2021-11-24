@@ -58,3 +58,11 @@ footer > div {
 span {
   height: 85px;
 }
+
+.stats {
+  background-color: aliceblue;
+}
+
+img {
+  width: 500px;
+}
