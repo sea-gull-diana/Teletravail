@@ -110,10 +110,31 @@ img {
 }
 
 /*pour la page team.html*/
-#team{display: flex;
-flex-direction: row;
-justify-content: space-around;
-margin: 10% 0 0 0;}
-.teamPhoto{border: 5px solid ;
-border-radius: 10px;}
-.teamPre{width: 30%;}
+#team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10% 0 0 0;
+}
+.teamPhoto {
+  border: 10px double rgb(3, 131, 103);
+  border-radius: 20px;
+}
+#photoTeam {
+  width: 50%; 
+  margin-top: 10px;
+  margin-right: 20px;
+  float: left;}
+.teamPre {width: 35%;}
+.nom {
+  text-align: center;
+  margin: 5% 0;
+  font-weight: bold;
+  color: rgb(3, 131, 103);
+}
+#team p {font-size: 18px;}
+#team p strong {color: rgb(3, 131, 103);}
+
+
+/*pour la page presentation.html*/
+.presentationProjet p:nth-child(5) {text-align: end;}
