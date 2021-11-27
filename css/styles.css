@@ -87,3 +87,12 @@ img {
   font-style: italic;
   font-size: 22px;
 }
+
+/*pour la page team.html*/
+#team{display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: 10% 0 0 0;}
+.teamPhoto{border: 5px solid ;
+border-radius: 10px;}
+.teamPre{width: 30%;}
