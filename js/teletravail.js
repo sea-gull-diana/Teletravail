@@ -1,22 +1,31 @@
 $(document).ready(function() {
     // When the "+" button is clicked...
     $("#add").click(function() {
-    // Append a new empty row with two buttons in the end
-    $("tbody").append(`<tr>
-                            <td></td>
-                            <td></td>
-                            <td>
-                                <button class="btn btn-warning confirm">Confirmer</button>
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-outline-danger delete" onclick="deleteRow(this)">Supprimer</button>
-                            </td>
-                            </tr>`);
-    // Prepare the newly-created row to get user input
-    editRow($("tbody:last-child .confirm"));
-    // Increase the questions number
-    $("#score").html(parseInt($("#score").html()) + 1);
-});
+        // Append a new empty row with two buttons in the end
+        $("tbody").append(`<tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <button class="btn btn-warning confirm">Confirmer</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-danger delete" onclick="deleteRow(this)">Supprimer</button>
+                                </td>
+                                </tr>`);
+        // Prepare the newly-created row to get user input
+        editRow($("tbody:last-child .confirm"));
+        // Increase the questions number
+        $("#score").html(parseInt($("#score").html()) + 1);
+    });
+
+    $(".small-title").click(function() {
+        if ($(this).next().css("display") == "none") {
+            $(this).siblings().css("display", "block");
+        }
+        else {
+            $(this).siblings().css("display", "none");
+        }
+    });
 });
 
 function confirmEdit(champ) {

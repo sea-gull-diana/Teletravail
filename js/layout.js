@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const inHead = `
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="js/jquery.js"></script>
+  <script src="js/teletravail.js" type="text/javascript"></script>
   `
   const containHead = document.createRange().createContextualFragment(inHead);
   head.append(containHead);
@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
   // encoding.setAttribute('content', "text/html; charset=UTF-8");
   // head.appendChild(encoding);
 
-  var navbox = document.querySelector("header");
+  var navbox = document.querySelector("body");
   navbox.insertAdjacentHTML('afterbegin', `
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Accueil</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
