@@ -27,9 +27,10 @@ $(document).ready(function() {
         }
     });
 
-    // $(".réduire").click(function(){
-    //     $(this).prevUntil("h5").css("display","none")
-    //     $(this).css("display","none")
+    $(".reduire").click(function(){
+         $(this).prevUntil("h3, h5").css("display","none");
+         $(this).css("display","none");
+    });
 
     $(".medium-title").click(function() {
         if ($(this).next().css("display") == "none") {

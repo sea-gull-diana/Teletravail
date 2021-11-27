@@ -27,6 +27,16 @@ h1, h3 {font-weight: bold; margin: 30px 0;}
 
 /* tout ce qui concerne la barre de navigation */
 
+#sujet {
+  font-size: 28px;
+  font-style: italic;
+  background-color: white;
+  color:rgb(3, 131, 103);
+  line-height: 50px;
+  text-align: center;
+  padding: 5px;
+}
+
 nav {
   background-color: rgb(3, 131, 103);
 }
@@ -148,8 +158,10 @@ img {
   background-color:rgb(3, 131, 103);
   color: white;
   border-radius: 5px;
-  line-height: 40px;
+  line-height: 50px;
   padding-left: 10px;
+  border: solid white 1px;
+  margin: 20px 0;
 }
 
 .small-title:hover {
@@ -166,7 +178,7 @@ img {
   cursor: pointer;
   color:rgb(3, 131, 103);
   border-radius: 5px;
-  border: solid rgb(3, 131, 103) 1px;
+  border: solid rgb(3, 131, 103) 3px;
   padding: 10px;
   line-height: 50px;
 }
@@ -174,5 +186,18 @@ img {
 .medium-title:hover {
   color: white;
   background-color: rgb(3, 131, 103);
-  border: none;
+  border: transparent white 3px;
+}
+
+.reduire {
+  display: none;
+  background-color: transparent;
+  border: solid rgb(3, 131, 103) 1px;
+  color:rgb(3, 131, 103);
+}
+
+.reduire:hover {
+  color: greenyellow;
+  border: solid white 1px;
+  text-decoration: underline;
 }
