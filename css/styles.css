@@ -132,6 +132,17 @@ img {
   display: none;
 }
 
+.small-title ~ ul {
+  display: none;
+}
+
+.small-title ~ blockquote {
+  display: none;
+}
+.small-title ~ input{
+  display: none;
+}
+
 .small-title {
   cursor: pointer;
   background-color:rgb(3, 131, 103);

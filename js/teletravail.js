@@ -26,6 +26,11 @@ $(document).ready(function() {
             $(this).siblings().css("display", "none");
         }
     });
+
+    $(".réduire").click(function(){
+        $(this).prevUntil("h5").css("display","none")
+        $(this).css("display","none")
+    });
 });
 
 function confirmEdit(champ) {
