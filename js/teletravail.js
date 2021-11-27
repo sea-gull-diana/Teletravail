@@ -26,6 +26,15 @@ $(document).ready(function() {
             $(this).siblings().css("display", "none");
         }
     });
+
+    $(".medium-title").click(function() {
+        if ($(this).next().css("display") == "none") {
+            $(this).siblings().css("display", "block");
+        }
+        else {
+            $(this).siblings().css("display", "none");
+        }
+    });
 });
 
 function confirmEdit(champ) {
