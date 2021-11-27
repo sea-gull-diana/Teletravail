@@ -1,3 +1,5 @@
+/* la mise en page pour tout le site */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -6,11 +8,10 @@ body {
 
 h5 {font-size: 24px;}
 
-h1, h3 {font-weight: bold; margin-bottom: 20px;}
+h1, h3 {font-weight: bold; margin: 30px 0;}
 
-.navbar-brand, .nav-item {
-  font-size: 26px;
-  margin-left: 15px;
+.stats {
+  background-color: aliceblue;
 }
 
 @media(max-width: 768px) {
@@ -24,14 +25,22 @@ h1, h3 {font-weight: bold; margin-bottom: 20px;}
   .navbar-brand {font-size: 36px;}
 }
 
+/* tout ce qui concerne la barre de navigation */
+
 nav {
-  margin-bottom: 30px;
   background-color: rgb(3, 131, 103);
+}
+
+.navbar-brand, .nav-item {
+  font-size: 26px;
+  margin-left: 15px;
 }
 
 .nav-link, .navbar-brand {
     color: white;
 }
+
+/* la page contacts.html */
 
 .qr {
   padding: 20px 0px;
@@ -68,9 +77,7 @@ footer > div {
   padding-top: 10px;
 }
 
-.stats {
-  background-color: aliceblue;
-}
+/* pour tous les images */
 
 .img-box {
   position: relative;
@@ -89,10 +96,35 @@ img {
 }
 
 /*pour la page team.html*/
-#team{display: flex;
-flex-direction: row;
-justify-content: space-around;
-margin: 10% 0 0 0;}
-.teamPhoto{border: 5px solid ;
-border-radius: 10px;}
-.teamPre{width: 30%;}
+#team {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10% 0 0 0;
+}
+
+.teamPhoto {
+  border: 5px solid ;
+  border-radius: 10px;
+}
+
+.teamPre {width: 30%;}
+
+/* pour les menus deroulants sur les pages pour.html et contre.html */
+.small-title ~ p {
+  display: none;
+}
+
+.small-title {
+  cursor: pointer;
+  background-color:rgb(3, 131, 103);
+  color: white;
+  border-radius: 5px;
+  height: 50px;
+  padding: 5px;
+}
+
+.small-title:hover {
+  color:rgb(3, 131, 103);
+  background-color: aliceblue;
+}
