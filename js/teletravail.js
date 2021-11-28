@@ -34,10 +34,12 @@ $(document).ready(function() {
 
     $(".medium-title").click(function() {
         if ($(this).next().css("display") == "none") {
+            $(this).children().html("(ouvert)");
             $(this).siblings().css("display", "block");
         }
         else {
             $(this).siblings().css("display", "none");
+            $(this).children().html("(fermé)");
         }
     });
 });
