@@ -1,4 +1,5 @@
 $(document).ready(function() {
+// 1. Adding questions and answers in the contact form
     // When the "+" button is clicked...
     $("#add").click(function() {
         // Append a new empty row with two buttons in the end
@@ -18,32 +19,41 @@ $(document).ready(function() {
         $("#score").html(parseInt($("#score").html()) + 1);
     });
 
-    $(".small-title").click(function() {
+// Fold and unfold the text by clicking on subchapters' titles
+    // $(".small-title").click(function() {
+    //     if ($(this).next().css("display") == "none") {
+    //         $(this).siblings().css("display", "block");
+    //     }
+    //     else {
+    //         $(this).siblings().css("display", "none");
+    //     }
+    // });
+
+    // Should be replaced with a php variable in the future
+    $(".small-title, .medium-title").append("<span><img src='Images/2x/outline_chevron_left_black_24dp.png'/></span>");
+    // Expand text, change the arrow image and fixate the title's style on click
+    $(".medium-title, .small-title").click(function() {
         if ($(this).next().css("display") == "none") {
+            $(this).children().html("<span><img src='Images/2x/outline_expand_more_black_24dp.png'/></span>");
             $(this).siblings().css("display", "block");
+            $(this).css({"border": "solid rgb(3, 131, 103) 1px", "color":"rgb(3, 131, 103)", "background-color" : "white"});
+            $(this).children().css("filter", "invert(50%)");
         }
         else {
             $(this).siblings().css("display", "none");
+            $(this).children().html("<span><img src='Images/2x/outline_chevron_left_black_24dp.png'/></span>");
+            $(this).css({"border": "", "color":"", "background-color" : ""});
+            $(this).children().css("filter", "");
         }
     });
 
     $(".reduire").click(function(){
-         $(this).prevUntil("h3, h5").css("display","none");
-         $(this).css("display","none");
-    });
-
-    $(".medium-title").click(function() {
-        if ($(this).next().css("display") == "none") {
-            $(this).children().html("(ouvert)");
-            $(this).siblings().css("display", "block");
-        }
-        else {
-            $(this).siblings().css("display", "none");
-            $(this).children().html("(fermé)");
-        }
-    });
+        $(this).prevUntil("h3, h5").css("display","none");
+        $(this).css("display","none");
+   });
 });
 
+// Check if the fields are filled correctly and transform input fields into ordinary text
 function confirmEdit(champ) {
     var row = $(champ).parent().parent();
     var cell, text;

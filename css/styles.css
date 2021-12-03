@@ -19,7 +19,6 @@ li .dropdown-item {font-size: 22px;}
 
 @media(max-width: 768px) {
   body .img-box {width: 100%; left: 0px;}
-  .medium-title {align-items: flex-end;}
 }
 
 /* tout ce qui concerne la barre de navigation */
@@ -135,6 +134,8 @@ img {
 .presentationProjet p:nth-child(5) {text-align: end;}
 
 /* pour les menus deroulants sur les pages pour.html et contre.html */
+
+/* don't display the text after titles by default */
 .small-title ~ p {
   display: none;
 }
@@ -146,54 +147,83 @@ img {
 .small-title ~ blockquote {
   display: none;
 }
-.small-title ~ input{
+.small-title ~ input {
   display: none;
-}
-
-.small-title {
-  cursor: pointer;
-  background-color:rgb(3, 131, 103);
-  color: white;
-  border-radius: 5px;
-  line-height: 50px;
-  padding: 0px 10px;
-  border: solid white 1px;
-  margin: 20px 0;
-}
-
-.small-title:hover {
-  color:rgb(3, 131, 103);
-  background-color: aliceblue;
-  border: solid rgb(3, 131, 103) 1px;
 }
 
 .medium-title ~ div, .medium-title ~ p {
   display: none;
 }
 
+
+/* titles' styles */
+.small-title {
+  cursor: pointer;
+  background-color:rgb(3, 131, 103);
+  color: white;
+  border-radius: 5px;
+  line-height: 50px;
+  padding-left: 10px;
+  border: solid white 1px;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .medium-title {
   cursor: pointer;
   color:rgb(3, 131, 103);
   border-radius: 5px;
-  border: solid rgb(3, 131, 103) 3px;
-  padding: 10px;
+  border: solid rgb(66, 136, 121) 3px;
+  padding: 10px 0px 10px 10px;
   line-height: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.medium-title > span {
+/* expand arrow styles */
+.small-title img {
+  height: 30px;
+  filter: invert();
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.medium-title img {
+  filter: invert(50%)
+}
+
+.medium-title > span, .small-title > span {
   font-size: 20px;
   font-weight: normal;
   font-style: italic;
-  margin: 0px 10px;
-  color: gray;
+  min-width: 50px;
+  height: 50px;
 }
 
-.medium-title:hover {
-  color: white;
-  background-color: rgb(3, 131, 103);
-  border: transparent white 3px;
+/* change title colors on hover if the screen is not a touchpad */
+@media(hover: hover) {
+  .small-title:hover {
+    color:rgb(3, 131, 103);
+    background-color: aliceblue;
+    border: solid rgb(3, 131, 103) 1px;
+  }
+
+  .small-title:hover img {
+    filter: invert(50%);
+  }
+
+  .medium-title:hover img {
+    filter: invert();
+  }
+
+  .medium-title:hover {
+    color: white;
+    background-color: rgb(3, 131, 103);
+    border: transparent white 3px;
+  }
 }
 
 .reduire {
