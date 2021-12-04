@@ -1,5 +1,9 @@
+<?php
+  include("darkmode.php");
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
   <script src="js/layout.js"></script>
@@ -8,10 +12,17 @@
   <title>Télétravail - Accueil</title>
 </head>
 
-<body>
+<body class="<?php echo $themeClass; ?>">
   <header>
   </header>
   <main class="container-lg">
+    <!-- <div class="darkmode">
+      <div class="mode"></div>
+      <label class="switch">
+        <input type="checkbox" <?php echo $checkMode; ?> class="dark-theme" id="dark-theme"/>
+          <span class="slider round"></span>
+      </label>
+    </div> -->
     <h1>Est-ce que le télétravail est pérenne pour les salariés ?</h1>
     <p>
       Le 11 mars 2020, OMS (l’Organisation mondiale de la santé) a identifié la nouvelle épidémie de coronavirus de

@@ -1,3 +1,7 @@
+<?php
+  include("darkmode.php");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +9,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Télétravail - Temoignage</title>
 </head>
-<body>
+<body class="<?php echo $themeClass; ?>">
     <header>
     </header>
 </body>

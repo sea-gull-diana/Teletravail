@@ -1,3 +1,7 @@
+<?php
+  include("darkmode.php");
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -7,7 +11,7 @@
     <title>Télétravail - Présentation</title>
 </head>
 
-<body>
+<body class="<?php echo $themeClass; ?>">
     <header>
     </header>
     <main class="container-lg">
