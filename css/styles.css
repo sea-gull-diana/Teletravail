@@ -1,5 +1,3 @@
-/* Start implementing dark mode */
-
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -9,19 +7,89 @@ body {
   background-color: white;
 }
 
-/* Dark theme */
+/* Dark mode */
 body.dark-theme {
   background-color: rgb(1, 37, 30);
   color: white;
 }
 
 body.dark-theme img {
-  filter: brightness(.8) contrast(1.2);
+  filter: brightness(.7) contrast(1.2);
 }
 
 body.dark-theme #sujet {
   background-color: rgb(1, 37, 30);
   color:rgb(204, 250, 240);
+}
+
+body.dark-theme .stats {
+  background-color: rgb(2, 26, 46);
+  color: rgb(204, 250, 240);
+}
+
+body.dark-theme nav {
+  background-color: rgb(1, 82, 64);
+}
+
+body.dark-theme ul.dropdown-menu {
+  background-color: rgb(1, 37, 30);
+  color: white;
+}
+
+body.dark-theme ul.dropdown-menu a {color: white;}
+
+body.dark-theme .teamPhoto {
+  border: 10px double rgb(204, 250, 240);
+}
+
+body.dark-theme .nom {
+  color: rgb(204, 250, 240);
+}
+
+body.dark-theme #team p strong {color: rgb(204, 250, 240);}
+
+body.dark-theme .small-title {
+  background-color:rgb(1, 82, 64);
+  border: solid rgb(1, 82, 64) 1px;
+}
+
+body.dark-theme .medium-title {
+  color:rgb(204, 250, 240);
+  border: solid rgb(204, 250, 240) 3px;
+}
+
+body.dark-theme .medium-title img {
+  filter: invert(60%);
+}
+
+body.dark-theme .small-title img {
+  filter: invert();
+}
+
+body.dark-theme .reduire {
+  border: solid rgb(204, 250, 240) 1px;
+  color:rgb(204, 250, 240);
+}
+
+@media(hover: hover) {
+  body.dark-theme .small-title:hover {
+    color:rgb(204, 250, 240);
+    background-color: transparent;
+    border: solid rgb(204, 250, 240) 1px;
+  }
+
+  body.dark-theme .medium-title:hover {
+    background-color:rgb(1, 82, 64);
+    border: solid rgb(1, 82, 64) 3px;
+  }
+
+  body.dark-theme .medium-title:hover img {
+    filter: invert();
+  }
+
+  body.dark-theme .small-title:hover img {
+    filter: invert(60%);
+  }
 }
 
 .darkmode {
@@ -42,6 +110,7 @@ h1, h3 {font-weight: bold; margin: 30px 0;}
 
 .stats {
   background-color: aliceblue;
+  padding: 10px;
 }
 
 li .dropdown-item {font-size: 22px;}
@@ -74,7 +143,7 @@ nav {
 }
 
 .nav-link, .navbar-brand {
-    color: white;
+  color: white;
 }
 
 /* la page contacts.html */
@@ -206,7 +275,7 @@ img {
   cursor: pointer;
   color:rgb(3, 131, 103);
   border-radius: 5px;
-  border: solid rgb(66, 136, 121) 3px;
+  border: solid rgb(3, 131, 103) 3px;
   padding: 10px 0px 10px 10px;
   line-height: 50px;
   display: flex;
@@ -262,11 +331,12 @@ img {
   background-color: transparent;
   border: solid rgb(3, 131, 103) 1px;
   color:rgb(3, 131, 103);
+  margin: 20px 0;
 }
 
-.reduire:hover {
+body .reduire:hover {
   color: greenyellow;
-  border: solid white 1px;
+  border: solid greenyellow 1px;
   text-decoration: underline;
 }
 
@@ -313,11 +383,11 @@ img {
 }
 
 input:checked + .slider {
-  background-color: rgb(3, 131, 103);
+  background-color: rgb(1, 82, 64);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px rgb(3, 131, 103);
+  box-shadow: 0 0 1px rgb(1, 82, 64);
 }
 
 input:checked + .slider:before {

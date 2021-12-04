@@ -24,14 +24,19 @@ $(document).ready(function() {
     // Expand text, change the arrow image and fixate the title's style on click
     $(".medium-title, .small-title").click(function() {
         if ($(this).next().css("display") == "none") {
-            $(this).children().html("<span><img src='Images/2x/outline_expand_more_black_24dp.png'/></span>");
+            $(this).children().html("<img src='Images/2x/outline_expand_more_black_24dp.png'/>");
             $(this).siblings().css("display", "block");
-            $(this).css({"border": "solid rgb(3, 131, 103) 1px", "color":"rgb(3, 131, 103)", "background-color" : "white"});
+            if ($("body").hasClass("dark-theme")) {
+                $(this).css({"border": "solid rgb(204, 250, 240) 1px", "color":"rgb(204, 250, 240)", "background-color" : "transparent"});
+            }
+            else {
+                $(this).css({"border": "solid rgb(3, 131, 103) 1px", "color":"rgb(3, 131, 103)", "background-color" : "white"});
+            }
             $(this).children().css("filter", "invert(50%)");
         }
         else {
             $(this).siblings().css("display", "none");
-            $(this).children().html("<span><img src='Images/2x/outline_chevron_left_black_24dp.png'/></span>");
+            $(this).children().html("<img src='Images/2x/outline_chevron_left_black_24dp.png'/>");
             $(this).css({"border": "", "color":"", "background-color" : ""});
             $(this).children().css("filter", "");
         }
@@ -40,6 +45,8 @@ $(document).ready(function() {
     $(".reduire").click(function(){
         $(this).prevUntil("h3, h5").css("display","none");
         $(this).css("display","none");
+        $(this).siblings("h3, h5").css({"border": "", "color":"", "background-color" : ""});
+        $(this).siblings("h3, h5").children().html("<img src='Images/2x/outline_chevron_left_black_24dp.png'/>");
    });
 });
 

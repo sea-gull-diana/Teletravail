@@ -1,20 +1,10 @@
 <?php
-  include("darkmode.php");
+include("darkmode.php");
+$title = "Télétravail - Pour";
+include("layout.php");
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-<script src="js/layout.js"></script>
-<script src="js/jquery.js"></script>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Télétravail - Pour</title>
-</head>
-<body class="<?php echo $themeClass; ?>">
-    <header>
-    </header>
-    <main class="container-lg">
-        <h1>Les arguments en faveur du télétravail du point de vue de chaque acteur.</h1>
+<main class="container-lg">
+    <h1>Les arguments en faveur du télétravail du point de vue de chaque acteur.</h1>
     <p>
         Depuis la seconde moitié du siècle dernier jusqu'à nos jours, le télétravail devient de plus en plus reconnu dans la société. Et même si cette forme de travail a ses inconvénients (lien vers contre.html), leur nombre diminue au fil du temps, grâce au développement de la technologie.
     </p>
@@ -22,93 +12,94 @@
     <p>La recherche montre également qu’après la pandémie, le monde ne reviendra sans doute pas aux taux de télétravail d'avant COVID.</p>
 
     <div class="img-box">
-        <img src="Images/jours_en_teletravail.png" alt="Un graphique qui démontre que même si les taux de télétravail chuteront considérablement après les pandémies, ils ne reviendront pas aux niveaux d'avant Covid."/>
-        
+        <img src="Images/jours_en_teletravail.png" alt="Un graphique qui démontre que même si les taux de télétravail chuteront considérablement après les pandémies, ils ne reviendront pas aux niveaux d'avant Covid." />
+
         <p class="image-text">Pourcentage de journées complètes rémunérées travaillées à domicile. Etats-Unis.<a href="#s6">[6]</a></p>
     </div>
-    
+
     <p>Dans cette section, nous allons apprendre plus en détail pourquoi le télétravail est en train de se généraliser. Il convient de noter qu'il y a au moins trois parties intéressées dans la controverse du télétravail&#8239;: les employeurs, les employés et la société en général (et par conséquence les pouvoirs publics). Commençons par cette dernière et regardons les avantages que le télétravail peut offrir pour notre société.</p>
     <div>
-        <h3  class="medium-title">Avantages pour la société et les pouvoirs publics&#8239;:</h3>
+        <h3 class="medium-title">Avantages pour la société et les pouvoirs publics&#8239;:</h3>
         <div>
-            <h5 class="small-title">1.	Aspect écologique</h5>
+            <h5 class="small-title">1. Aspect écologique</h5>
             <p>Historiquement parlant, l'un des premiers avantages du télétravail remarqué par le grand public est le fait qu'il est bénéfique pour l'environnement. Les personnes qui travaillent à distance passent nettement moins de temps sur la route, ce qui réduit l'empreinte carbone. En plus des émissions de CO2, le télétravail serait potentiellement utile pour l'environnement, car il pourrait permettre aux autorités de dépenser moins pour les infrastructures routières et plus pour l'environnement, par exemple le recyclage.</p>
             <p class="stats">Statistiques&#8239;: L’agence française de la transition écologique&#8239;: un jour de télétravail par semaine fait économiser 187 kg eq. CO2 par an (environ 950 km en voiture). <a href="#s2">[2]</a></p>
         </div>
         <div>
-            <h5 class="small-title">2.	Moins de trafic routier</h5>
+            <h5 class="small-title">2. Moins de trafic routier</h5>
             <p>Un autre avantage lié à la diminution des déplacements chez les télétravailleurs est lié à la circulation. Moins de déplacements signifient moins d'embouteillages. Comme cela a été mentionné précédemment, cela permet aux autorités de moins penser aux infrastructures et aux moyens de les améliorer pour réduire le trafic. En conséquence, d'autres problèmes importants pour la société peuvent recevoir plus d'attention.</p>
         </div>
         <div>
-            <h5 class="small-title">3.	Réduction du chômage</h5>
+            <h5 class="small-title">3. Réduction du chômage</h5>
             <p>À la fin du 20e siècle, les autorités européennes ont accordé une attention particulière au développement du télétravail, l'UE a ajouté le télétravail à l'agenda « des politiques de croissance liées au développement des technologies de l'information et de la communication (TIC) » <a href="#s3">[3]</a>. L'une des principales raisons à cela était le potentiel du télétravail pour réduire le chômage dans les régions avec moins de places de travail, en permettant aux gens de travailler pour les entreprises basées dans les régions éloignées manquant de main-d'œuvre compétente.</p>
         </div>
         <div>
-            <h5 class="small-title">4.	Sécurité</h5>
+            <h5 class="small-title">4. Sécurité</h5>
             <p>Avec l'arrivée de la crise sanitaire en 2020, un autre avantage du télétravail pour la société est devenu évident&#8239;: une personne qui reste chez elle est moins susceptible d'attraper une maladie par rapport à une personne qui doit aller au bureau tous les jours et passer beaucoup de temps parmi des porteurs potentiels de virus.</p>
         </div>
     </div>
     <div>
-        <h3  class="medium-title">Avantages pour les employeurs&#8239;:</h3>
+        <h3 class="medium-title">Avantages pour les employeurs&#8239;:</h3>
         <p>Maintenant, qu'il est clair pourquoi la société et les pouvoirs publics sont si intéressées par le développement du télétravail, voyons pourquoi beaucoup d'entreprises soutiennent également ce type de travail. </p>
         <div>
-            <h5 class="small-title">1.	Augmentation de la productivité</h5>
+            <h5 class="small-title">1. Augmentation de la productivité</h5>
             <p>Bien qu'il puisse y avoir des opinions différentes sur la question de la productivité du télétravail, la majorité des chercheurs s'accordent à dire qu'il y a une augmentation significative de celle-ci. Selon l'étude de l’OpinionWay pour Microsoft France, environ 9 DRH sur 10 estiment que la performance a été pour le moins préservée avec le télétravail <a href="#s4">[4]</a>.</p>
             <p class="stats">Statistiques&#8239;: 85 % des employés américains considèrent qu’ils ont la même ou une plus haute productivité en télétravail. <a href="#s1">[1]</a></p>
             <p>Et pas étonnant, car le télétravail permet aux travailleurs de passer moins de temps à se déplacer et donc plus de temps à travailler. De plus, ils ne perdent pas de temps à discuter avec leurs collègues comme ils auraient pu le faire auparavant.</p>
         </div>
         <div>
-            <h5 class="small-title">2.	Économies de coûts</h5>
+            <h5 class="small-title">2. Économies de coûts</h5>
             <p>De toute évidence, il est avantageux pour les entreprises de ne pas avoir à louer et à entretenir un espace de bureau pour leurs employés. Le télétravail signifie également moins de dépenses d'électricité, d'eau ou d'équipement.</p>
         </div>
         <div>
-            <h5 class="small-title">3.	Fidélisation et motivation des collaborateurs</h5>
+            <h5 class="small-title">3. Fidélisation et motivation des collaborateurs</h5>
             <p>En règle générale, les employés ont une attitude positive envers le télétravail. Après tout, cela leur offre de multiples avantages dont nous parlerons ci-dessous.</p>
             <p class="stats">Statistiques&#8239;: La recherche d'OpinionWay a montré que 75 % des travailleurs pensent que le télétravail est apprécié par leurs collègues. <a href="#s4">[4]</a></p>
             <p>Ainsi, le poste à distance est souvent plus valorisé par le travailleur qu'un poste ordinaire, et l'entreprise qui permet le travail à distance est plus appréciée aussi.</p>
         </div>
         <div>
-            <h5 class="small-title">4.	Baisse de l’absentéisme</h5>
+            <h5 class="small-title">4. Baisse de l’absentéisme</h5>
             <p>Les problèmes de santé sont les raisons les plus fréquentes pour lesquelles les gens ne peuvent pas venir au bureau pendant les heures de travail. Cependant, la plupart des employés distants peuvent continuer à travailler, car ils n'ont pas à quitter la sécurité de leur maison pour cela. Ainsi, ils sont moins susceptibles de s'absenter du travail et il y a moins d’arrêts maladie.</p>
         </div>
     </div>
     <div>
-        <h3  class="medium-title" >Avantages pour les travailleurs&#8239;:</h3>
+        <h3 class="medium-title">Avantages pour les travailleurs&#8239;:</h3>
         <p>Comme nous l'avons mentionné précédemment, la plupart des employés aiment vraiment le télétravail, et ce, pour plusieurs raisons.</p>
         <div>
-            <h5 class="small-title">1.	Réduction des déplacements</h5>
+            <h5 class="small-title">1. Réduction des déplacements</h5>
             <p>Cet avantage a déjà été évoqué dans le cadre des avantages pour la société et les employeurs. Pour les travailleurs, cet aspect est également très avantageux, car cela signifie moins de frais de transport et un gain de temps considérable.</p>
         </div>
         <div>
-            <h5 class="small-title">2.	Augmentation de la productivité et de la qualité du travail</h5>
+            <h5 class="small-title">2. Augmentation de la productivité et de la qualité du travail</h5>
             <p>Comme le temps gagné est souvent utilisé pour faire plus de travail, il aide les employés à augmenter leur productivité et ainsi à se sentir plus satisfaits d'eux-mêmes. Passer moins de temps sur les interactions sociales avec les collègues peut également avoir un impact positif sur la performance globale et la qualité du travail.</p>
         </div>
         <div>
-            <h5 class="small-title">3.	Moins de stress au travail</h5>
+            <h5 class="small-title">3. Moins de stress au travail</h5>
             <p>La plupart des télétravailleurs s'accordent à dire que le travail à distance est souvent beaucoup moins stressant que le travail en présentiel. Une personne peut moins penser à son image aux yeux de ses collègues et de ses dirigeants, car elle n’a pas à les affronter trop souvent.</p>
         </div>
         <div>
-            <h5 class="small-title">4.	Meilleure qualité de vie au travail</h5>
+            <h5 class="small-title">4. Meilleure qualité de vie au travail</h5>
             <p>Horaires de travail flexibles, moins de stress et plus de sécurité conduisent logiquement à l'amélioration de la qualité de vie des salariés en général. La possibilité de concilier facilement vie privée et vie professionnelle (par exemple s'occuper d'enfants et travailler en parallèle) peut également être bénéfique pour le bien-être d'une personne.</p>
-    </div>
+        </div>
         <p>Au total, il y a plein d'arguments pour tous les acteurs de la controverse en faveur du télétravail. Il est important de noter que la liste ci-dessus n'est pas exhaustive et que d'autres avantages convaincants peuvent être ajoutés, comme une dynamisation du territoire pour les autorités ou une plus grande autonomie pour les salariés. Il est clair que le télétravail ne va pas disparaître de sitôt, et comme ses inconvénients continuent de diminuer avec le développement de la technologie moderne, il y a de plus en plus de chances que ce mode de travail reste avec beaucoup d'entre nous pour toujours.</p>
     </div>
     <h3>Sources&#8239;:</h3>
-<span id="s1">[1]</span>
-<p>F. Zarifi, E. Bellanger, et O. Escher, « Sommes-nous plus efficaces en télétravail ? », Le Monde.fr, oct. 17, 2021. [Online]. Disponible sur: <a href="https://www.lemonde.fr/societe/video/2021/10/17/sommes-nous-plus-efficaces-en-teletravail_6098732_3224.html" target=_blank>https://www.lemonde.fr/societe/video/2021/10/17/sommes-nous-plus-efficaces-en-teletravail_6098732_3224.html</a>. [Consulté le: 19-oct-2021]</p>
-<span id="s2">[2]</span>
-<p>« Caractérisation des effets rebond induits par le télétravail », ADEME, sept. 2020. [Online]. Disponible sur: <a href="https://librairie.ademe.fr/mobilite-et-transport/3776-caracterisation-des-effets-rebond-induits-par-le-teletravail.html" target=_blank>https://librairie.ademe.fr/mobilite-et-transport/3776-caracterisation-des-effets-rebond-induits-par-le-teletravail.html</a>. [Consulté le: 24-oct-2021]</p>
-<span id="s3">[3]</span>
-<p>L. Taskin, « Télétravail, organisation et management&#8239;: Enjeux et perspectives post-covid », Regards écon. - Regards Economiques (Université Catholique de Louvain), Belgique, p. 13 19, mai 18, 2021 [Online]. Disponible sur: <a href="https://halshs.archives-ouvertes.fr/halshs-03345444/document" target=_blank>https://halshs.archives-ouvertes.fr/halshs-03345444/document</a>. [Consulté le: 10-oct-2021]</p>
-<span id="s4">[4]</span>
-<p>S. Capucine, « Un an après : le travail s’est transformé, les DRH aussi », News Centre Microsoft France, avr. 01, 2021 [Online]. Disponible sur: <a href="https://news.microsoft.com/fr-fr/2021/04/01/un-an-apres-le-travail-sest-transforme-les-drh-aussi/" target=_blank>https://news.microsoft.com/fr-fr/2021/04/01/un-an-apres-le-travail-sest-transforme-les-drh-aussi/</a>. [Consulté le: 13-oct-2021]</p>
-<span id="s5">[5]</span>
-<p>E. Glaeser et D. Cutler, « You may get more work done at home. But you’d have better ideas at the office. », The Washington Post, sept. 24, 2021 [Online]. Disponible sur: <a href="https://www.washingtonpost.com/outlook/2021/09/24/working-home-productivity-pandemic-remote/" target=_blank>https://www.washingtonpost.com/outlook/2021/09/24/working-home-productivity-pandemic-remote/</a>. [Consulté le: 10-oct-2021]</p>
-<h3>Sources des illustrations&#8239;:</h3>
-<span id="s6">[6]</span>
-<p>J. M. Barrero, N. Bloom, et S. J. Davis, « SWAA September 2021 Updates », p. 18, sept. 2021 [Online]. Disponible sur&#8239;: <a href="https://wfhresearch.com/wp-content/uploads/2021/09/SWAA-August-2021_forwebsite-1.pdf" target=_blank>https://wfhresearch.com/wp-content/uploads/2021/09/SWAA-August-2021_forwebsite-1.pdf</a>. [Consulté le: 12-nov-2021]</p>
-<span id="s7">[7]</span>
-<p>P. Givord et J. Silhol, « Confinement&#8239;: des conséquences économiques inégales selon les ménages - Insee Première - 1822 », Insee, oct. 14, 2020 [Online]. Disponible sur&#8239;: <a href="https://www.insee.fr/fr/statistiques/4801313#graphique-figure3" target=_blank>https://www.insee.fr/fr/statistiques/4801313#graphique-figure3</a>. [Consulté le: 13-nov-2021].</p>
-    </main>
+    <span id="s1">[1]</span>
+    <p>F. Zarifi, E. Bellanger, et O. Escher, « Sommes-nous plus efficaces en télétravail ? », Le Monde.fr, oct. 17, 2021. [Online]. Disponible sur: <a href="https://www.lemonde.fr/societe/video/2021/10/17/sommes-nous-plus-efficaces-en-teletravail_6098732_3224.html" target=_blank>https://www.lemonde.fr/societe/video/2021/10/17/sommes-nous-plus-efficaces-en-teletravail_6098732_3224.html</a>. [Consulté le: 19-oct-2021]</p>
+    <span id="s2">[2]</span>
+    <p>« Caractérisation des effets rebond induits par le télétravail », ADEME, sept. 2020. [Online]. Disponible sur: <a href="https://librairie.ademe.fr/mobilite-et-transport/3776-caracterisation-des-effets-rebond-induits-par-le-teletravail.html" target=_blank>https://librairie.ademe.fr/mobilite-et-transport/3776-caracterisation-des-effets-rebond-induits-par-le-teletravail.html</a>. [Consulté le: 24-oct-2021]</p>
+    <span id="s3">[3]</span>
+    <p>L. Taskin, « Télétravail, organisation et management&#8239;: Enjeux et perspectives post-covid », Regards écon. - Regards Economiques (Université Catholique de Louvain), Belgique, p. 13 19, mai 18, 2021 [Online]. Disponible sur: <a href="https://halshs.archives-ouvertes.fr/halshs-03345444/document" target=_blank>https://halshs.archives-ouvertes.fr/halshs-03345444/document</a>. [Consulté le: 10-oct-2021]</p>
+    <span id="s4">[4]</span>
+    <p>S. Capucine, « Un an après : le travail s’est transformé, les DRH aussi », News Centre Microsoft France, avr. 01, 2021 [Online]. Disponible sur: <a href="https://news.microsoft.com/fr-fr/2021/04/01/un-an-apres-le-travail-sest-transforme-les-drh-aussi/" target=_blank>https://news.microsoft.com/fr-fr/2021/04/01/un-an-apres-le-travail-sest-transforme-les-drh-aussi/</a>. [Consulté le: 13-oct-2021]</p>
+    <span id="s5">[5]</span>
+    <p>E. Glaeser et D. Cutler, « You may get more work done at home. But you’d have better ideas at the office. », The Washington Post, sept. 24, 2021 [Online]. Disponible sur: <a href="https://www.washingtonpost.com/outlook/2021/09/24/working-home-productivity-pandemic-remote/" target=_blank>https://www.washingtonpost.com/outlook/2021/09/24/working-home-productivity-pandemic-remote/</a>. [Consulté le: 10-oct-2021]</p>
+    <h3>Sources des illustrations&#8239;:</h3>
+    <span id="s6">[6]</span>
+    <p>J. M. Barrero, N. Bloom, et S. J. Davis, « SWAA September 2021 Updates », p. 18, sept. 2021 [Online]. Disponible sur&#8239;: <a href="https://wfhresearch.com/wp-content/uploads/2021/09/SWAA-August-2021_forwebsite-1.pdf" target=_blank>https://wfhresearch.com/wp-content/uploads/2021/09/SWAA-August-2021_forwebsite-1.pdf</a>. [Consulté le: 12-nov-2021]</p>
+    <span id="s7">[7]</span>
+    <p>P. Givord et J. Silhol, « Confinement&#8239;: des conséquences économiques inégales selon les ménages - Insee Première - 1822 », Insee, oct. 14, 2020 [Online]. Disponible sur&#8239;: <a href="https://www.insee.fr/fr/statistiques/4801313#graphique-figure3" target=_blank>https://www.insee.fr/fr/statistiques/4801313#graphique-figure3</a>. [Consulté le: 13-nov-2021].</p>
+</main>
 </body>
+
 </html>

@@ -1,52 +1,41 @@
 <?php
-  include("darkmode.php");
+include("darkmode.php");
+$title = "Télétravail - Présentation";
+include("layout.php");
 ?>
+<main class="container-lg">
+    <h1>Présentation du projet</h1>
 
-<!DOCTYPE html>
-<html>
+    <div class="presentationProjet">
+        <p> L’épidémie du COVID19 et les mesures de confinement mises en œuvre par les gouvernements, le télétravail
+            est
+            devenu un sujet incontournable dans notre société. Dans le cadre du projet étudiant du département
+            informatique de
+            l’IUT Montpellier-Sète, la création de ce site web portant sur la controverse du télétravail a pour but
+            de
+            sensibiliser tous les acteurs impliqués, soient les sociétés privées ou les pouvoirs publics, les
+            employeurs
+            ou les
+            salariés, aux enjeux autour de cette nouvelle tendance de travail.
+        </p>
+        <p>
+            A travers ce site, vous pouvez bien connaître le télétravail par sa définition, le développement
+            chronologique du
+            télétravail et ses contextes d’évolution, les différentes modalités de télétravail et ainsi ses
+            modalités de
+            la mise
+            en œuvre. Vous pouvez également consulter les principales critiques positives ou négatives autour de
+            cette
+            controverse venant de différents acteurs, qui vous apporteront probablement une nouvelle vision sur le
+            télétravail.
+        </p>
 
-<head>
-    <script src="js/layout.js"></script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Télétravail - Présentation</title>
-</head>
+        <p>Réfléchissons tous ensemble et n’hésitez pas à nous contacter pour exprimer votre point de vue.</p>
 
-<body class="<?php echo $themeClass; ?>">
-    <header>
-    </header>
-    <main class="container-lg">
-        <h1>Présentation du projet</h1>
-
-        <div class="presentationProjet">
-            <p> L’épidémie du COVID19 et les mesures de confinement mises en œuvre par les gouvernements, le télétravail
-                est
-                devenu un sujet incontournable dans notre société. Dans le cadre du projet étudiant du département
-                informatique de
-                l’IUT Montpellier-Sète, la création de ce site web portant sur la controverse du télétravail a pour but
-                de
-                sensibiliser tous les acteurs impliqués, soient les sociétés privées ou les pouvoirs publics, les
-                employeurs
-                ou les
-                salariés, aux enjeux autour de cette nouvelle tendance de travail.
-            </p>
-            <p>
-                A travers ce site, vous pouvez bien connaître le télétravail par sa définition, le développement
-                chronologique du
-                télétravail et ses contextes d’évolution, les différentes modalités de télétravail et ainsi ses
-                modalités de
-                la mise
-                en œuvre. Vous pouvez également consulter les principales critiques positives ou négatives autour de
-                cette
-                controverse venant de différents acteurs, qui vous apporteront probablement une nouvelle vision sur le
-                télétravail.
-            </p>
-
-            <p>Réfléchissons tous ensemble et n’hésitez pas à nous contacter pour exprimer votre point de vue.</p>
-
-            <p>Bonne lecture !</p>
-            <p>Dziyana & Jiayi</p>
-        </div>
-    </main>
+        <p>Bonne lecture !</p>
+        <p>Dziyana & Jiayi</p>
+    </div>
+</main>
 </body>
 
 </html>

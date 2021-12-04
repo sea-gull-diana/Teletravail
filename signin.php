@@ -1,16 +1,12 @@
 <?php
-  include("darkmode.php");
+include("darkmode.php");
+$title = "Télétravail - Sign In";
+include("layout.php");
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-<title>Connexion</title>
-</head>
-<body class="<?php echo $themeClass; ?>">
 
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 
 </body>
+
 </html>

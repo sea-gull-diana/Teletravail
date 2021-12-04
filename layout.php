@@ -1,24 +1,21 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var head = document.querySelector("head");
-  head.insertAdjacentHTML('afterbegin', `
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+    <script src="js/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/teletravail.js" type="text/javascript"></script>
+    <script src="js/darkmode.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  `);
+    <title><?php echo $title; ?></title>
+  </head>
 
-  const inHead = `
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="js/teletravail.js" type="text/javascript"></script>
-  <script src="js/darkmode.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark light">
-  `
-  const containHead = document.createRange().createContextualFragment(inHead);
-  head.append(containHead);
-
-  var navbox = document.querySelector("body");
-  navbox.insertAdjacentHTML('afterbegin', `
+  <body class="<?php echo $themeClass; ?>">
   <div id="sujet">Télétravail&#8239;: la digitalisation du travail est-elle pérenne pour les salariés&#8239;?</div>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container-fluid">
@@ -57,5 +54,3 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
   </div>
   </nav>
-  `);
-});
