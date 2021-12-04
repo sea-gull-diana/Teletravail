@@ -19,28 +19,9 @@ body.dark-theme img {
   filter: brightness(.8) contrast(1.2);
 }
 
-/* If user's system is in dark mode by default */
-@media (prefers-color-scheme: dark) {
-  body { 
-    background-color: rgb(1, 37, 30);
-    color: white;
-  }
-
-  img {
-      filter: brightness(.8) contrast(1.2);
-    }
-
-  /* Override with a light theme */
-  body.light-theme
-  {
-    color: black;
-    background-color: white;
-
-  }
-
-  body.light-theme img {
-      filter: brightness(1) contrast(1);
-    }
+body.dark-theme #sujet {
+  background-color: rgb(1, 37, 30);
+  color:rgb(204, 250, 240);
 }
 
 .darkmode {
@@ -67,6 +48,7 @@ li .dropdown-item {font-size: 22px;}
 
 @media(max-width: 768px) {
   body .img-box {width: 100%; left: 0px;}
+  body #sujet {font-size: 22px;}
 }
 
 /* tout ce qui concerne la barre de navigation */

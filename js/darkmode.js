@@ -10,16 +10,15 @@ $(document).ready(function() {
     `)
     // Make a variable to check system color preferences
     const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-    // If a user's whole system is in dark mode, put webpages in dark mode by default
-    if (prefersDarkScheme.matches) {
+    // If a user's whole system is in dark mode and there's no light-mode cookie, put webpages in dark mode by default
+    if (prefersDarkScheme.matches && getCookie("theme") != "light") {
         document.body.classList.add("dark-theme");
     }
     // When the mode switch is clicked
     $("#dark-theme").change(function() {
         let theme = "light";
-        // If it's checked, remove light-theme class (if present) and add dark-theme
+        // If it's checked, add dark-theme class
         if (this.checked) {
-            document.body.classList.remove("light-theme");
             document.body.classList.add("dark-theme");
             theme = "dark";
             // Change label text to Dark Mode to the switch
@@ -27,11 +26,6 @@ $(document).ready(function() {
         }
         // Otherwise...
         else {
-            // If user's system is in dark mode
-            if (prefersDarkScheme.matches) {
-                 // ...then apply the .light-theme class to override those dark mode styles
-                 document.body.classList.add("light-theme");
-            }
             document.body.classList.remove("dark-theme");
             // Change label text to Light Mode to the switch
             $(".mode").html("Light Mode");
@@ -39,14 +33,9 @@ $(document).ready(function() {
         // Add a cookie to indicate the user's preferred theme or change an existing one
         document.cookie = "theme=" + theme;
     });
-    // Make sure that the class doesn't contain both light and dark themes at the same time
-    if (document.body.classList.contains("light-theme")) {
-        document.body.classList.remove("dark-theme");
-        // Change label text to Light Mode to the switch
-        $(".mode").html("Light Mode");
-    }
-    // If the theme is dark the mode switch should always be checked
-    else if (document.body.classList.contains("dark-theme")) {
+    // // If the theme is dark the mode switch should always be checked
+    // else if
+    if (document.body.classList.contains("dark-theme")) {
         $("#dark-theme").attr("checked", true);
         // Change label text to Dark Mode to the switch
         $(".mode").html("Dark Mode");
@@ -55,3 +44,14 @@ $(document).ready(function() {
         $(".mode").html("Light Mode");
     }
 });
+
+function getCookie(cName) {
+    const name = cName + "=";
+    const cDecoded = decodeURIComponent(document.cookie); //to be careful
+    const cArr = cDecoded.split('; ');
+    let res;
+    cArr.forEach(val => {
+      if (val.indexOf(name) === 0) res = val.substring(name.length);
+    })
+    return res
+  }

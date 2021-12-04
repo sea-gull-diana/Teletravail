@@ -17,14 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
   const containHead = document.createRange().createContextualFragment(inHead);
   head.append(containHead);
 
-  // var encoding = document.createElement("meta");
-  // encoding.setAttribute('http-equiv', "Content-Type");
-  // encoding.setAttribute('content', "text/html; charset=UTF-8");
-  // head.appendChild(encoding);
-
   var navbox = document.querySelector("body");
   navbox.insertAdjacentHTML('afterbegin', `
-  <div id="sujet">Télétravail : la digitalisation du travail est-elle pérenne pour les salariés ?</div>
+  <div id="sujet">Télétravail&#8239;: la digitalisation du travail est-elle pérenne pour les salariés&#8239;?</div>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.php">Accueil</a>

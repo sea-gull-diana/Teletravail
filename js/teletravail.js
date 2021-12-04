@@ -19,16 +19,6 @@ $(document).ready(function() {
         $("#score").html(parseInt($("#score").html()) + 1);
     });
 
-// Fold and unfold the text by clicking on subchapters' titles
-    // $(".small-title").click(function() {
-    //     if ($(this).next().css("display") == "none") {
-    //         $(this).siblings().css("display", "block");
-    //     }
-    //     else {
-    //         $(this).siblings().css("display", "none");
-    //     }
-    // });
-
     // Should be replaced with a php variable in the future
     $(".small-title, .medium-title").append("<span><img src='Images/2x/outline_chevron_left_black_24dp.png'/></span>");
     // Expand text, change the arrow image and fixate the title's style on click
