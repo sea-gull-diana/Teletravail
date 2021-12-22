@@ -46,11 +46,6 @@ $(document).ready(function() {
             $(this).children().css("filter", "");
         }
     });
-
-    $(".reduire").click(function(){
-        $(this).prevUntil("h3, h5").css("display","none");
-        $(this).css("display","none");
-   });
 });
 
 // Check if the fields are filled correctly and transform input fields into ordinary text
