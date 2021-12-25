@@ -102,6 +102,19 @@ img {
 }
 
 /*pour la page team.html*/
+#photoPrésentation{
+  display: flex;
+  flex-direction: row;
+}
+#photoTeam {
+  width: 30%; 
+  height: 30%;
+  margin: 10px 30px 0px 0px;
+  flex-shrink: 1;
+  }
+#Présentationtext{
+  margin: auto;
+}
 #team {
   display: flex;
   flex-direction: row;
@@ -109,16 +122,17 @@ img {
   margin: 10% 0 0 0;
 }
 
+.teamPre {
+  display: flex;
+  flex-direction: column;
+  width: 35%;}
+
 .teamPhoto {
+  width: 50%;
+  margin: 0 auto;
   border: 10px double rgb(3, 131, 103);
   border-radius: 20px;
 }
-#photoTeam {
-  width: 50%; 
-  margin-top: 10px;
-  margin-right: 20px;
-  float: left;}
-.teamPre {width: 35%;}
 
 .nom {
   text-align: center;
