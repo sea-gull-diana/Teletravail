@@ -109,8 +109,9 @@ img {
 #photoTeam {
   width: 30%; 
   height: 30%;
-  margin: 10px 30px 0px 0px;
+  margin: auto 30px auto auto;
   flex-shrink: 1;
+  border-radius: 30px;
   }
 #Présentationtext{
   margin: auto;
@@ -130,7 +131,6 @@ img {
 .teamPhoto {
   width: 50%;
   margin: 0 auto;
-  border: 10px double rgb(3, 131, 103);
   border-radius: 20px;
 }
 
@@ -141,8 +141,19 @@ img {
   color: rgb(3, 131, 103);
 }
 #team p {font-size: 18px;}
-#team p strong {color: rgb(3, 131, 103);}
-
+strong {color: rgb(3, 131, 103);}
+@media(max-width: 768px) {
+  #photoTeam {
+    width: 70%; 
+    height: 70%;
+  margin: 10px auto 30px;}
+  #photoPrésentation{flex-direction: column;}
+  #team{flex-direction: column;
+    align-items: center;}
+  .teamPre {width: 80%;}
+  .teamPre:nth-child(1) {margin-bottom: 10%;}
+  .teamPhoto{border: hidden;}
+}
 
 /*pour la page presentation.html*/
 .presentationProjet p:nth-child(5) {text-align: end;}
