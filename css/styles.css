@@ -156,7 +156,11 @@ strong {color: rgb(3, 131, 103);}
 }
 
 /*pour la page presentation.html*/
-.presentationProjet p:nth-child(5) {text-align: end;}
+.presentationProjet p:nth-child(5) {
+  text-align: end;
+  color: rgb(3, 131, 103);
+  font-weight: bold;
+}
 
 /* pour les menus deroulants sur les pages pour.html et contre.html */
 
