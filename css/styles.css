@@ -8,8 +8,8 @@ body {
 }
 
 h5 {font-size: 24px;}
-
-h1, h3 {font-weight: bold; margin: 30px 0;}
+h6{color: black;}
+h1, h3,h6 {font-weight: bold; margin: 30px 0;}
 
 .stats {
   background-color: aliceblue;
@@ -30,7 +30,7 @@ li .dropdown-item {font-size: 22px;}
   color:rgb(3, 131, 103);
   line-height: 50px;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
 }
 
 nav {
@@ -38,7 +38,7 @@ nav {
 }
 
 .navbar-brand, .nav-item {
-  font-size: 26px;
+  font-size: 24px;
   margin-left: 15px;
 }
 
@@ -143,7 +143,6 @@ img {
 #team p {font-size: 18px;}
 strong {color: rgb(3, 131, 103);}
 @media(max-width: 768px) {
-  body{font-size: 14px;}
   #photoTeam {
     width: 70%; 
     height: 70%;
@@ -267,4 +266,11 @@ strong {color: rgb(3, 131, 103);}
   color: greenyellow;
   border: solid white 1px;
   text-decoration: underline;
+}
+
+/*sources style*/
+.sources{
+  margin-top: 150px;
+  font-size: 14px;
+  color: gray;
 }

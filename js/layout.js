@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   var navbox = document.querySelector("body");
   navbox.insertAdjacentHTML('afterbegin', `
-  <div id="sujet">Télétravail : la digitalisation du travail est-elle pérenne pour les salariés ?</div>
+  <div id="sujet"><strong>Télétravail : la digitalisation du travail est-elle pérenne pour les salariés ?</strong></div>
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Accueil</a>
