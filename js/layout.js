@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <li><a class="dropdown-item" href="./presentation.html">Présentation du projet</a></li>
             <li><a class="dropdown-item" href="./team.html">Notre équipe</a></li>
             <li><a class="dropdown-item" href="./contact.html">Contacts</a></li>
+            <li><a class="dropdown-item" href="./source.html">Sources</a></li>
           </ul>
         </li>
         <li class="nav-item">
@@ -47,15 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
         <li class="nav-item">
           <a class="nav-link active" href="./contre.html">Arguments contre</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blog
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="./temoignage.html">Publier un témoignage</a></li>
-            <li><a class="dropdown-item" href="./blog.html">Consulter le blog</a></li>
-          </ul>
-        </li>
+        
       </ul>
     </div>
   </div>
