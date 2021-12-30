@@ -38,6 +38,8 @@ body.dark-theme ul.dropdown-menu {
 
 body.dark-theme ul.dropdown-menu a {color: white;}
 
+body.dark-theme ul.dropdown-menu a:hover {color: black;}
+
 body.dark-theme .teamPhoto {
   border: 10px double rgb(204, 250, 240);
 }
@@ -69,6 +71,19 @@ body.dark-theme .small-title img {
 body.dark-theme .reduire {
   border: solid rgb(204, 250, 240) 1px;
   color:rgb(204, 250, 240);
+}
+
+body.dark-theme table {
+  color: white;
+}
+
+body.dark-theme table tr:hover td {
+  color: rgb(204, 250, 240);
+  background-color:rgb(1, 82, 64);
+}
+
+body.dark-theme #score {
+  border: 1px solid white;
 }
 
 @media(hover: hover) {
@@ -149,7 +164,7 @@ nav {
 /* la page contacts.html */
 
 .qr {
-  padding: 20px 0px;
+  padding: 20px 5px;
 }
 
 thead, tbody {

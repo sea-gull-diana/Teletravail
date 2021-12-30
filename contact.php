@@ -7,7 +7,7 @@ include("layout.php");
 </header>
 <main class="container-lg qr">
     <h1>Nous poser une question :</h1>
-    <table class="table table-striped table-hover">
+    <table class="table table-hover">
         <thead>
             <tr>
                 <th class="col-5">Question</th>
@@ -25,7 +25,7 @@ include("layout.php");
         Nombre de questions :
         <span id="score">0</span>
     </div>
-    <button id="add" type="button" class="btn btn-outline-success">+</button>
+    <button id="add" type="button" class="btn btn-outline-success"><i class="bi-plus-lg"></i></button>
 </footer>
 </div>
 </body>

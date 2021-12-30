@@ -4,15 +4,15 @@ $(document).ready(function() {
     $("#add").click(function() {
         // Append a new empty row with two buttons in the end
         $("tbody").append(`<tr>
-                                <td></td>
-                                <td></td>
-                                <td>
-                                    <button class="btn btn-warning confirm">Confirmer</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-outline-danger delete" onclick="deleteRow(this)">Supprimer</button>
-                                </td>
-                                </tr>`);
+            <td class="col-5"></td>
+            <td class="col-5"></td>
+            <td>
+                <button class="btn btn-success confirm"><i class="bi-check-circle"></i></button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-outline-danger delete" onclick="deleteRow(this)"><i class="bi-trash"></i></button>
+            </td>
+            </tr>`);
         // Prepare the newly-created row to get user input
         editRow($("tbody:last-child .confirm"));
         // Increase the questions number
@@ -64,7 +64,7 @@ function confirmEdit(champ) {
             return;
         }
     }
-    // Reprlace input fields in cells with the text value of these fields
+    // Replace input fields in cells with the text value of these fields
     for(var i = 0; i < 2; i++) {
         cell = $(row).children(":nth-child(" + (i + 1) + ")");
         text = cell.children(":first-child").val();
@@ -72,7 +72,7 @@ function confirmEdit(champ) {
     }
 
     // Replace "confirm" button with a "Modify" button
-    $(row).children(":nth-child(3)").html(`<button type="button" class="btn btn-outline-warning edit" onclick="editRow(this)">Modifier</button>`)
+    $(row).children(":nth-child(3)").html(`<button type="button" class="btn btn-outline-warning edit" onclick="editRow(this)"><i class="bi-pen"></i></button>`)
 }
 
 function editRow(champ) {
@@ -81,18 +81,18 @@ function editRow(champ) {
     var m = $(champ).parent().parent().children(":nth-child(3)");
     // Replace the text in the first two cells with input fields
     q.html(`
-            <input type="text" value="` +
+            <input class="col-5" type="text" value="` +
             q.text().trim() +`"
             />
             `);
     r.html(`
-            <input type="text" value="` +
+            <input class="col-5" type="text" value="` +
             r.text().trim() +`"
             />
             `);
     // Replaces "modify" button with "confirm" button
     m.html(`
-            <button class="btn btn-warning confirm"  onclick="confirmEdit(this)">Confirmer</button>
+            <button class="btn btn-success confirm"  onclick="confirmEdit(this)"><i class="bi-check-circle"></i></button>
             `);
 }
 
