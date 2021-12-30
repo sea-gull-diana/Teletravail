@@ -41,13 +41,6 @@ $(document).ready(function() {
             $(this).children().css("filter", "");
         }
     });
-
-    $(".reduire").click(function(){
-        $(this).prevUntil("h3, h5").css("display","none");
-        $(this).css("display","none");
-        $(this).siblings("h3, h5").css({"border": "", "color":"", "background-color" : ""});
-        $(this).siblings("h3, h5").children().html("<img src='Images/2x/outline_chevron_left_black_24dp.png'/>");
-   });
 });
 
 // Check if the fields are filled correctly and transform input fields into ordinary text

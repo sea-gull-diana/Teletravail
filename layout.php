@@ -42,15 +42,6 @@
         <li class="nav-item">
           <a class="nav-link active" href="./contre.php">Arguments contre</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Blog
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="./temoignage.php">Publier un témoignage</a></li>
-            <li><a class="dropdown-item" href="./blog.php">Consulter le blog</a></li>
-          </ul>
-        </li>
       </ul>
     </div>
   </div>
