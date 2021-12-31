@@ -34,6 +34,7 @@
             <li><a class="dropdown-item" href="./presentation.php">Présentation du projet</a></li>
             <li><a class="dropdown-item" href="./team.php">Notre équipe</a></li>
             <li><a class="dropdown-item" href="./contact.php">Contacts</a></li>
+            <li><a class="dropdown-item" href="./sources.php">Sources</a></li>
           </ul>
         </li>
         <li class="nav-item">
