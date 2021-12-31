@@ -4,7 +4,9 @@ $title = "Télétravail - Pour";
 include("layout.php");
 ?>
 <main class="container-lg">
-    <h1>Les arguments en faveur du télétravail du point de vue de chaque acteur.</h1>
+    <h2>Les arguments en faveur du télétravail du point de vue de chaque acteur.</h2>
+
+    <img class="banner" src="Images/Banner5.jpg" alt="Arguments pour - banner"/>
     <p>
         Depuis la seconde moitié du siècle dernier jusqu'à nos jours, le télétravail devient de plus en plus reconnu dans la société. Et même si cette forme de travail a ses inconvénients (lien vers contre.html), leur nombre diminue au fil du temps, grâce au développement de la technologie.
     </p>

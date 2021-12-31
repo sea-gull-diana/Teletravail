@@ -5,6 +5,7 @@ include("layout.php");
 ?>
   <main class="container-lg">
     <h2>Est-ce que le télétravail est pérenne pour les salariés ?</h2>
+    <img class="banner" src="Images/Banner.png" alt="Page d'accueil - banner"/>
     <p>
       Le 11 mars 2020, OMS (l’Organisation mondiale de la santé) a identifié la nouvelle épidémie de coronavirus qui a complètement bouleversé l’économie mondiale et le monde du travail à une échelle sans précédent.
       Face à cette crise sanitaire, les gouvernements du monde entier sont obligés de prendre la situation très

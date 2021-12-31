@@ -212,6 +212,10 @@ footer > div {
 
 /* pour tous les images */
 
+.banner {
+  width:100%;
+}
+
 .img-box {
   position: relative;
   left: 50px;

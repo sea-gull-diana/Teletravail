@@ -4,7 +4,9 @@ $title = "Télétravail - Contre";
 include("layout.php");
 ?>
 <main class="container-lg">
-    <h1>Les arguments en défaveur du télétravail.</h1>
+    <h2>Les arguments en défaveur du télétravail.</h2>
+
+    <img class="banner" src="Images/Banner6.jpg" alt="Arguments contre - banner"/>
 
     <p>Certes, le télétravail n'est pas pour tout le monde. Au moins pas encore. Les pompiers ne peuvent pas éteindre le feu via Skype et il n'y a pas d'application qui permettrait aux chirurgiens de traiter leurs patients à distance. Et même pour les professions qui ont cet avantage de « télétravaillabilité », il peut y avoir de sérieux inconvénients à prendre en compte avant d'adopter le télétravail comme méthode de travail préférée. Examinons de plus près ces inconvénients sous trois angles différents&#8239;: celui de la société, celui des employeurs et celui des employés. </p>
 
