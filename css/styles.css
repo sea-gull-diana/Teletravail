@@ -159,6 +159,9 @@ img {
 #team p {font-size: 18px;}
 strong {color: rgb(3, 131, 103);}
 @media(max-width: 768px) {
+  h6{
+    border-left: 190px solid #ddd;  
+    border-right: 190px solid #ddd;  }
   #photoTeam {
     width: 70%; 
     height: 70%;
