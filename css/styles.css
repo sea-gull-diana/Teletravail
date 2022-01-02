@@ -282,9 +282,7 @@ img {
 strong {color: rgb(3, 131, 103);}
 
 @media(max-width: 768px) {
-  h6{
-    border-left: 190px solid #ddd;  
-    border-right: 190px solid #ddd;  }
+  h6{visibility: hidden; }
   #photoTeam {
     width: 70%; 
     height: 70%;
