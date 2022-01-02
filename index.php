@@ -181,7 +181,7 @@ include("layout.php");
       <p>Dans cette section, nous allons apprendre plus en détail pourquoi le télétravail est en train de se
         généraliser. Il convient de noter qu'il y a au moins trois parties intéressées dans la controverse du
         télétravail : les employeurs, les employés et la société en général...
-        (<a href="pour.html">lire la suite</a>)
+        (<a href="pour.php">lire la suite</a>)
       </p>
     </div>
     <div>
@@ -192,7 +192,7 @@ include("layout.php");
         sérieux inconvénients à prendre en compte avant d'adopter le télétravail comme méthode de travail préférée.
         Examinons de plus près ces inconvénients sous trois angles différents : celui de la société, celui des
         employeurs et celui des employés...
-        (<a href="contre.html">lire la suite</a>)
+        (<a href="contre.php">lire la suite</a>)
       </p>
 
     </div>

@@ -14,7 +14,7 @@ body.dark-theme {
 }
 
 body.dark-theme img {
-  filter: brightness(.7) contrast(1.2);
+  filter: brightness(.8) contrast(1.2);
 }
 
 body.dark-theme #sujet {
@@ -45,8 +45,10 @@ body.dark-theme .teamPhoto {
 }
 
 body.dark-theme .nom {
-  color: rgb(204, 250, 240);
+  color: rgb(160, 243, 225);
 }
+
+body.dark-theme strong {color: rgb(160, 243, 225);}
 
 body.dark-theme #team p strong {color: rgb(204, 250, 240);}
 
